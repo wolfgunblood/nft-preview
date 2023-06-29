@@ -1,0 +1,148 @@
+.nft-container {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    border-radius: 12px;
+    gap: 15px;
+
+    .bg-wrapper {
+        height: 250px;
+        width: 250px;
+        position: relative;
+
+        .main-img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .view-wrapper {
+            position: absolute;
+            inset: 0;
+
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: hsl(178, 100%, 50%);
+            opacity: 0;
+            transition: 0.2s all ease-in-out;
+            &:hover {
+                opacity: 0.5;
+            }
+
+        }
+    }
+
+    .nft-header {
+        margin: 0;
+        color: #fff;
+        // font styles
+        font-family: "Outfit", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+        letter-spacing: 0.02em;
+
+        &:hover {
+            color: hsl(178, 100%, 50%);
+            cursor: pointer;
+        }
+    }
+
+    .nft-desc {
+        width: 240px;
+        margin: 0;
+        color: hsl(215, 51%, 70%);
+
+        // font styles
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        letter-spacing: 0.02em;
+        line-height: 1.5;
+        // white-space: 10;
+    }
+
+    .eth-container {
+        display: flex;
+        justify-content: space-between;
+
+        .eth-quant,
+        .time-left {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            p {
+                font-family: "Outfit", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        .eth-quant {
+            p {
+                margin: 0;
+                color: hsl(178, 100%, 50%);
+            }
+        }
+
+        .time-left {
+            p {
+                margin: 0;
+                // color: hsl(178, 100%, 50%) ;
+                color: hsl(215, 51%, 70%);
+
+            }
+        }
+    }
+
+    .avatar-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .avatar {
+            height: 30px;
+            width: 30px;
+            object-fit: contain;
+        }
+
+        .avatar-text {
+            margin: 0;
+            // color: #fff;
+            color: hsl(215, 51%, 70%);
+
+            font-family: "Outfit", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+
+            .name {
+                color: #fff;
+
+                &:hover {
+                    color: hsl(178, 100%, 50%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .hz-line {
+
+        background-color: hsl(215, 51%, 70%);
+        height: 0.05rem;
+        width: 100%;
+        opacity: 0.5;
+    }
+}

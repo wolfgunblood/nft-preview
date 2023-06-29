@@ -1,0 +1,26 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+
+:root {
+
+  font-family: "Outfit",sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
